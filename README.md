@@ -1,70 +1,166 @@
-# Getting Started with Create React App
+# 👨‍💻 Kishor Kumar — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="portfolio-preview.png" alt="Kishor Kumar Portfolio" width="100%">
+</p>
 
-## Available Scripts
+<h3 align="center">Java Full Stack Developer</h3>
 
-In the project directory, you can run:
+<p align="center">
+  Building responsive web applications and scalable backend systems with Java and modern web technologies.
+</p>
 
-### `npm start`
+<p align="center">
+  <a href="https://kishorkumar-app.vercel.app/">🌐 Live Portfolio</a> •
+  <a href="https://github.com/Kishor165">GitHub</a> •
+  <a href="https://linkedin.com/in/kishorkumar28">LinkedIn</a>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 👋 About Me
 
-### `npm test`
+Hi, I'm **Kishor Kumar**, a B.Tech graduate in **Artificial Intelligence & Data Science** with a strong focus on **Java Full Stack Development**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I enjoy building web applications, developing backend APIs, working with databases, and creating clean and responsive user interfaces.
 
-### `npm run build`
+Currently, I am strengthening my skills in **Java, Spring Boot, REST APIs, React, MySQL, JDBC, Servlets, and Data Structures & Algorithms**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend
 
-### `npm run eject`
+* HTML5
+* CSS3
+* JavaScript
+* React
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Backend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Java
+* Spring Boot
+* JDBC
+* Servlets
+* REST APIs
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Database
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* MySQL
 
-## Learn More
+### Programming & Concepts
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Core Java
+* OOP
+* Collections
+* Exception Handling
+* Multithreading
+* Data Structures & Algorithms
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Tools
 
-### Code Splitting
+* Git
+* GitHub
+* VS Code
+* Eclipse
+* Postman
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🚀 Featured Projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🍔 Online Food Ordering System
 
-### Making a Progressive Web App
+A web-based food ordering application that allows users to browse restaurants and dishes, search for food, manage profiles, and place orders.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Technologies:** HTML, CSS, JavaScript, Firebase, EmailJS
 
-### Advanced Configuration
+**Repository:**
+https://github.com/Kishor165/ONLINE-FOOD-DELIVERY-SYSTEM
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+### 🤖 Meeting Summarizer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+An AI-powered application that converts meeting audio into text and generates summarized notes. It also provides question-answer functionality based on the meeting content.
 
-### `npm run build` fails to minify
+**Technologies:** Python, Flask, JavaScript, OpenAI Whisper, Google Gemini, PyPDF2, python-docx
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Repository:**
+https://github.com/Kishor165/Meeting-Summarizer
+
+---
+
+### 🛒 Amazon Clone
+
+A frontend e-commerce project created to practice webpage structure, responsive design, styling, and JavaScript-based interactions.
+
+**Technologies:** HTML, CSS, JavaScript
+
+**Repository:**
+https://github.com/Kishor165/Amazon_clone_page
+
+---
+
+## 📚 Currently Learning
+
+```text
+Java
+ ├── Advanced Java
+ ├── JDBC
+ ├── Servlets
+ └── Spring Boot
+      └── REST APIs
+
+Frontend
+ ├── HTML
+ ├── CSS
+ ├── JavaScript
+ └── React
+
+Database
+ └── MySQL
+
+Problem Solving
+ └── Data Structures & Algorithms
+```
+
+---
+
+## 🎯 Career Focus
+
+I'm currently looking for opportunities as a:
+
+* Java Full Stack Developer
+* Java Developer
+* Backend Developer
+* Software Developer
+
+My primary focus is on building **real-world applications using Java, Spring Boot, React, REST APIs, and MySQL**.
+
+---
+
+## 📊 GitHub
+
+<p align="center">
+  <a href="https://github.com/Kishor165">
+    <img src="https://github-readme-stats.vercel.app/api?username=Kishor165&show_icons=true&hide_border=true&rank_icon=github" alt="Kishor's GitHub Stats">
+  </a>
+</p>
+
+---
+
+## 🤝 Connect With Me
+
+<p align="left">
+  <a href="https://linkedin.com/in/kishorkumar28">LinkedIn</a> •
+  <a href="https://github.com/Kishor165">GitHub</a> •
+  <a href="https://kishorkumar-app.vercel.app/">Portfolio</a>
+</p>
+
+---
+
+<p align="center">
+  ⭐ Thanks for visiting my portfolio repository!
+</p>
