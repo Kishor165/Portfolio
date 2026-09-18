@@ -1,0 +1,63 @@
+:root {
+  --bg-dark: #050505;
+  --bg-card: #0f0f12;
+  --accent: #00d2ff;
+  --text-main: #ffffff;
+  --text-dim: #94a3b8;
+  /* This 10% ensures everything aligns on the same vertical line */
+  --padding-inline: 10%; 
+}
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden; /* This kills the left-right moving problem */
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Inter', -apple-system, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 100px var(--padding-inline);
+}
+/* ─── Custom Scrollbar for Laptop Mode ─── */
+
+/* 1. The width of the entire scrollbar area */
+::-webkit-scrollbar {
+  width: 8px; /* Makes it thin and elegant */
+}
+
+/* 2. The background of the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #020917; /* Matches your --bg-dark */
+}
+
+/* 3. The actual draggable bar (The Thumb) */
+::-webkit-scrollbar-thumb {
+  background: #1f2937; /* A subtle dark gray */
+  border-radius: 10px; /* Makes it rounded like your project cards */
+  border: 2px solid #050505; /* Creates a small gap around the bar */
+}
+
+/* 4. Hover effect - make it glow blue when touched */
+::-webkit-scrollbar-thumb:hover {
+  background: #58a6ff; /* Matches your accent blue */
+}

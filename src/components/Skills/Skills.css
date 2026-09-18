@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap');
+.skills-section {
+  padding: 100px 10%;
+  background: transparent;
+}
+.skills-title-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
+  
+  /* Font Matching */
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 3.5rem;          /* Larger size to match screenshot impact */
+  font-weight: 900;           /* Heaviest weight for that thick look */
+  color: #FFFFFF;
+  
+  /* The "Secret Sauce" from your image */
+  letter-spacing: -1px;       /* This makes the letters touch like in the photo */
+  text-transform: none;       /* Keeps it "Skillset" not "SKILLSET" */
+  line-height: 0.8;           /* Tighter vertical spacing */
+}
+
+.text-blue {
+  /* Exact Cyan from the Screenshot */
+  color: #00bcd4; 
+  font-weight: 900;
+}
+
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.skill-category-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+}
+
+.category-title {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 70px;
+}
+
+.icon-wrapper {
+  width: 55px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+/* --- FULL BRAND COLOR PALETTE --- */
+
+/* Programming & Backend */
+.java i { color: #f89820; }
+.python i { color: #3776ab; }
+.js i, .js-square i { color: #f7df1e; }
+.php i { color: #777bb4; }
+.flask i { color: #ffffff; } 
+.mysql i { color: #00758f; }
+
+/* Frontend */
+.html i { color: #e34f26; }
+.css i { color: #1572b6; }
+.bootstrap i { color: #7952b3; }
+.react i { color: #61dbfb; }
+
+/* Machine Learning & AI (New) */
+.numpy i { color: #013243; }
+.matplotlib i { color: #11557c; }
+.sklearn i { color: #f7931e; }
+.tensorflow i { color: #ff6f00; }
+.pandas i { color: #150458; }
+.nlp i { color: #00d2ff; }
+
+/* Tools & Deployment (New) */
+.git i { color: #f05032; }
+.github i { color: #ffffff; }
+.firebase i { color: #ffa611; }
+.emailjs i { color: #34a853; }
+.jupyter i { color: #f37626; }
+.claude i { color: #d97757; }
+
+/* Dynamic Glow Effect */
+.skill-item:hover .icon-wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px currentColor; /* Creates a glow using the icon's color */
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+.skill-item span {
+  font-size: 0.7rem;
+  color: #beb5b5;
+  text-align: center;
+}
+/* --- CUSTOM BRAND COLORS & LOGO FIXES --- */
+
+
+
+/* Claude AI: Using a robot icon with a distinct terracotta color */
+.claude i { 
+  color: #d97757; 
+}
+/* --- HOVER GLOW EFFECT --- */
+
+.skill-category-card {
+  /* Ensure a smooth transition for the glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: default;
+}
+
+.skill-category-card:hover {
+  transform: translateY(-5px); /* Subtle lift effect */
+  border-color: #00d0ff40;       /* Cyan-blue border on hover */
+  
+  /* The Blue Glow Shadow - matching your design */
+  box-shadow: 0 0 20px rgba(0, 210, 255, 0.3), 
+              inset 0 0 15px rgba(0, 210, 255, 0.1);
+}
+
+/* Individual Skill Item Hover Glow */
+.skill-item:hover .icon-wrapper {
+  background: rgba(0, 210, 255, 0.1);
+  box-shadow: 0 0 12px rgba(0, 210, 255, 0.4);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+/* --- TITLE COLOR CHANGE ON HOVER --- */
+
+.skill-category-card:hover .category-title {
+  color: #00d2ff; /* Your signature blue color */
+  text-shadow: 0 0 10px rgba(0, 210, 255, 0.5); /* Subtle glow for the text */
+  transition: all 0.3s ease;
+}
+
+/* Ensure the default state is white */
+.category-title {
+  color: #fff;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+/* --- SOFT SKILLS COLORS --- */
+.soft-green i { color: #4ade80; }
+.soft-blue i { color: #60a5fa; }
+.soft-purple i { color: #a78bfa; }
+.soft-cyan i { color: #22d3ee; }
+.soft-red i { color: #fb7185; }
+
+/* --- MOBILE OPTIMIZATIONS --- */
+@media (max-width: 768px) {
+  /* Center the main section padding */
+  .skills-section {
+    padding: 60px 5%;
+  }
+
+  /* Center the Skillset title */
+  .skills-title-main {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+
+  /* Adjust grid for smaller screens */
+  .skills-grid {
+    grid-template-columns: 1fr; /* Stack cards vertically */
+    gap: 20px;
+  }
+
+  .skill-category-card {
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the title inside the card */
+    text-align: center;
+  }
+
+  /* IMPORTANT: Center the icons inside the grid */
+  .icon-grid {
+    justify-content: center; /* This centers the icons horizontally */
+    gap: 15px;
+  }
+
+  .skill-item {
+    width: 80px; /* Slightly wider for better touch targets */
+  }
+
+  .category-title {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}

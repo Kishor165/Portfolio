@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+/* ── SECTION ── */
+.exp-section {
+  padding: 100px 5%;
+  background: transparent;
+}
+
+/* ── HEADER ── */
+.section-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section-title {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 0;
+  border: 1.5px solid #00bcd4;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #6b7fa3;
+  max-width: 560px;
+  margin: 14px auto 0;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+/* ── TIMELINE ── */
+.timeline-wrapper {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.center-line {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to bottom, #00bcd4, rgba(0, 188, 212, 0.05));
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 50%;
+  width: 100%;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.timeline-item.left {
+  justify-content: flex-start;
+  padding-left: 0;
+  padding-right: 50%;
+}
+
+.timeline-dot {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #00bcd4;
+  border-radius: 50%;
+  left: 50%;
+  top: 28px;
+  transform: translateX(-50%);
+  z-index: 5;
+  box-shadow: 0 0 12px #00bcd4;
+  border: 3px solid #091020;
+}
+
+/* ── CARD ── */
+.timeline-card {
+  width: 90%;
+  background:transparent;
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 24px 26px 22px;
+  margin: 0 30px;
+  position: relative;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-card:hover {
+  border-color: rgba(0, 188, 212, 0.35);
+  transform: translateY(-4px);
+}
+
+/* Year badge — top right */
+.card-year {
+  position: absolute;
+  top: 10px;
+  right: 22px;
+  color: #4a9eca;
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Role — centered bold white */
+.role-text {
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  padding-right: 70px; 
+  margin-left:70px;/* avoid overlapping year badge */
+}
+
+/* Company + location row */
+.company-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.comp-name {
+  color: #8ea3c0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot-sep {
+  color: #3a4a65;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.loc-text {
+  color: #97a6bb;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Divider */
+.card-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin: 0 0 14px;
+}
+
+/* Cyan project label */
+.project-label {
+  color: #4ab8d4;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
+}
+
+/* Description */
+.desc-list {
+  list-style: none;
+  padding: 0;
+}
+
+.desc-list li {
+  color: #909eb2;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  margin-bottom: 7px;
+  padding-left: 16px;
+  position: relative;
+  text-align: left;
+}
+
+.desc-list li::before {
+  /*content: "▹";  fgdgdgege ge*/
+  color: #00bcd4;
+  position: absolute;
+  left: 0;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .section-title { font-size: 2rem; }
+  .section-title::before,
+  .section-title::after { width: 40px; }
+
+  .center-line { left: 20px; }
+
+  .timeline-item,
+  .timeline-item.left {
+    justify-content: flex-start;
+    padding-left: 45px;
+    padding-right: 0;
+  }
+
+  .timeline-dot { left: 20px; }
+
+  .timeline-card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .role-text {
+    text-align: left;
+    padding-right: 65px;
+  }
+  .role-text
+  {
+     
+    font-size: 1.1rem; /* Slightly smaller font so it fits better on mobile */
+    white-space: nowrap;
+    text-align: left; /* Ensures it stays aligned even if forced */
+  }
+  /* Ensure the card has enough room */
+  .timeline-card {
+    padding: 15px; 
+    width: 100%;
+  }
+  .role-text {
+  text-align: left;
+  padding-right: 56px;   /* keep space for year badge */
+  margin-left: 0;        /* remove desktop offset */
+  margin-right: -18px;
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.4;
+  white-space: normal;
+  word-break: break-word;
+}
+  .company-info { justify-content: flex-start; }
+  .project-label { text-align: left; }
+}

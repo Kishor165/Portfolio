@@ -1,0 +1,231 @@
+.projects-section {
+  padding: 100px 8%;
+  background: transparent; /* Deep navy/black */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+
+
+.card-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* --- 1. CARD REMAINS THE SAME --- */
+.project-card {
+  background: #091020;
+  border-radius: 40px;
+  padding: 15px; /* Keep this to protect your text box size */
+  border: 1px solid rgba(31, 22, 63, 0.804);
+  transition: all 0.4s ease;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+  position: relative;
+}
+
+/* --- 2. IMAGE SIZE REDUCTION (Only Top/Left/Right touched) --- */
+.image-container {
+  /* This forces the image to ignore the 15px padding and touch the border */
+  width: calc(100% + 30px); 
+  
+  /* CHANGE THIS VALUE to reduce the image height as much as you want */
+  height: 300px; /* Was 280px, now shorter to save space */
+  
+  /* Negative margins pull it to the edges */
+  margin-top: -15px;   
+  margin-left: -15px;  
+  margin-right: -15px; 
+  
+  border-radius: 0; 
+  overflow: hidden;
+  position: relative;
+}
+
+
+.footer-link, .view-details, .image-container {
+  text-decoration: none;
+  color: inherit; /* Keeps your original icon/text colors */
+ 
+}
+
+
+.project-card {
+  /* ... keep your existing styles ... */
+  display: flex;
+  flex-direction: column; /* Stacks image, content, and footer vertically */
+  height: 580px;         /* This MUST be a fixed height */
+}
+
+.card-inner {
+  height: 100%;          /* Ensure the inner container fills the whole card */
+  display: flex;
+  flex-direction: column;
+}
+
+.content-box {
+  /* ... keep your existing styles ... */
+  flex: 1;               /* This tells the content box to take up all available space */
+  display: flex;
+  flex-direction: column;
+}
+
+.p-tags {
+  margin-top: auto;      /* This pushes the tags to the bottom of the content box */
+  padding-top: 15px;
+}
+
+.card-footer {
+  /* ... keep your existing styles ... */
+  margin-top: auto;      /* MAGIC LINE: Pushes the icons to the bottom of the card */
+  padding: 20px 15px;    /* Adjust padding to your liking */
+}
+
+
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures high quality without stretching */
+  filter: brightness(0.7) contrast(1.1); /* Matches that high-tech dark look */
+  transition: 0.5s;
+
+  /* Rounds ONLY the top to match your card curve */
+  border-top-left-radius: 38px;
+  border-top-right-radius: 38px;
+}
+
+
+.project-card:hover img {
+  filter: brightness(0.9);
+  transform: scale(1.05);
+}
+
+/* --- CONTENT BOX (The Sunken Effect) --- */
+.content-box {
+  background: #091020;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 25px;
+  padding: 25px;
+  margin-top: -50px; /* Overlaps image */
+  margin-left: 15px;
+  margin-right: 15px;
+  z-index: 2;
+  flex-grow: 1;
+}
+
+
+
+
+/* --- 3. CONTENT BOX (STAYS SAME) --- */
+
+.p-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.p-desc {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* --- TECH PILLS --- */
+.p-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.p-tags span {
+  background: #091020;
+  color: #94a3b8;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- FOOTER --- */
+.card-footer {
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+.view-details {
+  color: #00bcd4;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Blue border glow on hover */
+.project-card:hover {
+  border-color: rgba(0, 188, 212, 0.4);
+  box-shadow: 0 0 30px rgba(0, 188, 212, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- THE MOBILE FIX (For screens smaller than 768px) --- */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 60px 5%; /* Reduces section padding so cards have more room */
+  }
+
+  .projects-grid {
+    /* Ensures only 1 card per row on mobile */
+    grid-template-columns: 1fr; 
+    gap: 30px;
+  }
+
+  .project-card {
+    width: 100%; /* Makes card fill the screen width */
+    margin: 0 auto; /* Centers the entire card */
+  }
+
+  .content-box {
+    /* Centers the content box inside the card on mobile */
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto; 
+  }
+}

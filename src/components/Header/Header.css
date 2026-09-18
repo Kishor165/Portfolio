@@ -1,0 +1,123 @@
+.header-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+  padding: 20px 0; /* Vertical padding only */                                           /*kishor*/
+  transition: 0.4s ease-in-out;
+}
+
+.header-main.scrolled {
+  background: transparent;
+  padding: 15px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center; /* PERFECT CENTER FOR DESKTOP */
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.03); /* Glass island effect */
+  backdrop-filter: blur(15px);
+  padding: 5px 30px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.menu-icon {
+  display: none;
+  position: absolute;
+  right: 3%; /* You said 3% looks perfect */
+  z-index: 3001; /* This ensures the icon stays on top of the drawer */
+  cursor: pointer;
+}
+
+/* MOBILE RESPONSIVE LOGIC */
+@media (max-width: 1024px) {
+  .menu-icon { display: block; }
+
+  .nav-container { justify-content: flex-end; } /* Toggle stays right */
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    height: 100vh;
+    width: 220px; /* Specific width so it doesn't feel like "half the screen" */                          /*kishor*/
+    background: #0a0a0c;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Change from flex-start to center for a cleaner look */
+    padding: 0; /* Clear previous padding */
+    border-radius: 0;
+    border-left: 1px solid rgba(0, 210, 255, 0.2);
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    gap: 2.5rem; /* Better spacing between each word */
+  }
+
+  .nav-links.mobile-active {
+    right: 0;
+  }
+
+  .nav-links a {
+    font-size: 1rem; /* Slightly larger for mobile fingers */
+    width: 100%;
+    text-align: center; /* Centers every link perfectly */
+    letter-spacing: 2px;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: -1;
+  }
+}
+/* ... keep your previous nav-links and container styles ... */
+
+.nav-links a.active {
+  color: var(--accent); /* Your AI Blue color */
+  text-shadow: 0 0 10px rgba(0, 210, 255, 0.6);
+}
+
+.nav-links a.active::after {
+  width: 100%; /* Line stays under the active link */
+  background: var(--accent);
+}
+
+/* Fix the Resume alignment specifically for Mobile */
+  .nav-links .resume-btn.highlight-gold {
+    margin-left: 0 !important; /* Remove the desktop side-margin */
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: 8px 20px;
+    font-size: 0.8rem;
+    color: #069494 !important;
+   /* border: 1px solid #069494; /* Keep your specific color */                                     /* kishor*/
+    border-radius: 4px;
+  }
+

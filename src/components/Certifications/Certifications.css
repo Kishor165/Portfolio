@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ─── Section ─────────────────────────────────────────── */
+.cert-section {
+  padding: 100px 5%;
+  background-color: transparent;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+.cert-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cert-heading {
+  font-family: 'Syne', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #f5f5f7;
+  margin-bottom: 60px;           /*certificate */
+  letter-spacing: -1px;
+}
+
+/* ─── Grid ─────────────────────────────────────────────── */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 32px;
+}
+
+/* ─── Card ─────────────────────────────────────────────── */
+.cert-card {
+  background-color: #0b1120;      /* need to chnage the color */
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  transition: transform 0.4s ease,
+  border-color 0.4s ease,
+  box-shadow 0.4s ease;
+}
+.cert-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 188, 212, 0.4);
+  box-shadow: 0 0 30px rgba(0, 188, 212, 0.1);
+}
+
+/* ─── Image box ─────────────────────────────────────────── */
+.cert-image-box {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: #1c1c1e;
+}
+.cert-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease, 
+  filter 0.6s ease;
+}
+.cert-card:hover .cert-cover-img {
+  filter: brightness(0.9);
+  transform: scale(1.05);
+}
+
+/* ─── Logo box ─────────────────────────────────────────── */
+.cert-logo-box {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 28px 32px;
+  transition: background-color 0.4s ease;
+}
+.cert-card:hover .cert-logo-box 
+{ 
+  background-color: #f1f1f1; 
+}
+.ibm-svg
+ { 
+  height: 56px;
+   width: auto;
+    flex-shrink: 0;
+ }
+.cert-logo-text 
+{ display: flex; 
+  flex-direction: column; 
+  line-height: 1.1;
+ }
+.cert-logo-cognitive 
+{
+  font-family: 'Syne', sans-serif;
+  font-size: 28px; 
+  font-weight: 800;
+  color: #1f70c1;
+   letter-spacing: -0.5px;
+}
+.cert-logo-class {
+  font-family: 'Syne', sans-serif;
+  font-size: 28px; 
+  font-weight: 800;
+  color: #38bdf8; 
+  letter-spacing: -0.5px;
+}
+
+/* ─── Card body ─────────────────────────────────────────── */
+/* ----------------------------------------------------------------------------------*/
+.cert-body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-bottom: -30px
+}
+
+/* category and date stacked, aligned left */
+.cert-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+/* category on top */
+.cert-category {
+  color: #f0f5f4;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 2px 0;
+  margin-left: 0;         /* remove negative margin */
+  letter-spacing: 0.5px;
+}
+
+/* date just below category */
+.cert-date {
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cert-title 
+{ 
+  color: #f5f5f7;
+   font-size: 20px;
+    font-weight: 700;
+     line-height: 1.3; 
+     margin: 0 0 6px 0;
+     }
+.cert-issuer 
+{ 
+  color: #94a3b8;
+   font-size: 15px;
+    font-weight: 400; 
+    margin: 0 0 15px 0;
+   }
+.cert-issuer strong 
+{ 
+  color: #f5f5f7; 
+  font-weight: 500; 
+}
+.cert-desc 
+{ 
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  flex-grow: 1;
+  }
+.cert-footer 
+{
+   margin-top: auto; 
+   padding-top: 15px; 
+   border-top: 1px solid rgba(255,255,255,0.05);
+ }
+
+/* ═══════════════════════════════════════════════════════
+   MODAL  —  pixel-matched to screenshot
+   ═══════════════════════════════════════════════════════ */
+
+.cm-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: cm-fade 0.2s ease;
+}
+@keyframes cm-fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* X button — fixed top-right of viewport, matches screenshot */
+.cm-close {
+  position: fixed;
+  top: 80px;
+  right: 220px;
+  z-index: 10001;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #091020;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #cbd5e1;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  line-height: 1;
+}
+.cm-close:hover { background: #0d121a; color: #f8fafc; }
+
+/* Container: left image + right panel */
+.cm-container {
+  display: flex;
+  width: 88vw;
+  max-width: 1100px;
+  height: 80vh;
+  max-height: 700px;
+  border-radius: 16px;
+  overflow: hidden;
+  animation: cm-up 0.25s ease;
+}
+@keyframes cm-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+/* LEFT — flush image, no padding */
+.cm-left {
+  flex: 0 0 62%;
+  background: #0d1117;
+  overflow: hidden;
+}
+.cm-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;        /* show full image */
+  display: block;
+  /* add these */
+  max-width: 100%;
+  max-height: 100%;
+}
+.cm-logo-fallback {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.cm-ibm-svg { height: 80px; width: auto; }
+
+/* RIGHT — dark details panel */
+.cm-right {
+  flex: 0 0 38%;
+  background: #091020;;
+  display: flex;
+  flex-direction: column;
+}
+
+.cm-right-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 40px 36px 24px;
+  scrollbar-width: none;
+}
+.cm-right-body::-webkit-scrollbar { display: none; }
+
+/* Bold cyan heading like "TATA" in the screenshot */
+.cm-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #8dc4df;
+  margin: 0 0 32px 0;
+  letter-spacing: 0px;
+}
+
+/* Label + value rows */
+.cm-row { margin-bottom: 22px; }
+.cm-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 3px;
+}
+.cm-value {
+  display: block;
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.cm-desc {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.75;
+  margin-top: 4px;
+}
+
+/* Bottom nav — ( Prev   Download   Next ) plain text, like screenshot */
+.cm-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 36px 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.cm-nav-btn {
+  background: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #cbd5e1;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+.cm-nav-btn:hover:not(.cm-nav-btn--off) { color: #ffffff; }
+.cm-nav-btn--off { opacity: 0.3; cursor: default; }
+
+.cm-download {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #cbd5e1;
+  text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+.cm-download:hover { color: #ffffff; }
+
+/* ─── Responsive ─────────────────────────────────────── */
+@media (max-width: 768px) {
+  .cert-grid    { grid-template-columns: 1fr; }
+  .cert-heading { font-size: 30px; }
+
+  .cm-container {
+    flex-direction: column;
+    width: 95vw;
+    height: 90vh;
+    max-height: none;
+  }
+ .cm-left {
+  flex: 0 0 62%;
+  background: #0d1117;
+  overflow: hidden;
+  /* add these */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;              /* controls visible size */
+}
+  .cm-right { flex: 1; }
+  .cm-right-body { padding: 22px 20px 14px; }
+  .cm-nav   { padding: 14px 20px 20px; }
+  .cm-heading { font-size: 20px; margin-bottom: 18px; }
+}
+
+
+
+
+
+
+
+
+
+.cm-left {
+  background: #1c1d22 !important;              /* empty area near image */
+}
+.cm-right{
+  border-left: 1px solid rgba(255,255,255,0.06);
+}
+
+
+
+
+
+
+/* --- Section Header (Image 3 Style) --- */
+.section-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.header-line {
+  height: 1.5px;
+  width: 70px;
+  background: linear-gradient( #38bdf8);
+}
+
+.right-line {
+  background: linear-gradient( #38bdf8);
+}
+
+.cert-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.cert-subheading {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 15px;
+  margin-top: -40px;
+  margin-bottom: 60px;
+}
+
+
+/* ─── Responsive Mobile Fix ─── */
+@media (max-width: 768px) {
+  /* Fix the X button so it's always visible on mobile */
+  .cm-close {
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: rgba(9, 16, 32, 0.9);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  /* Make the container a vertical stack */
+  .cm-container {
+    flex-direction: column;
+    width: 92vw;
+    height: 85vh;
+    max-height: none;
+    margin-top: 40px; /* Space for the X button */
+  }
+
+  /* Image takes top half */
+  .cm-left {
+    flex: 0 0 40%; /* Reduced height for image on mobile */
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cm-img {
+    object-fit: contain;
+    max-height: 100%;
+  }
+
+  /* Text takes bottom half and scrolls */
+  .cm-right {
+    flex: 1;
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    overflow-y: auto;
+  }
+
+  .cm-right-body {
+    padding: 20px;
+    overflow-y: visible; /* Let the parent scroll */
+  }
+
+  .cm-heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  /* Navigation buttons at the bottom */
+  .cm-nav {
+    padding: 15px 20px;
+    position: sticky;
+    bottom: 0;
+    background: #091020;
+  }
+}

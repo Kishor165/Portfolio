@@ -1,0 +1,221 @@
+.about-section {
+  padding: 80px 20px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* IMAGE STYLING */
+.about-image-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.image-border {
+  width: 280px;
+  height: 320px;
+  border-radius: 20px;
+  
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.image-border:hover {
+ /* transform: translateY(-10px); */
+ 
+  
+  box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* TEXT STYLING */
+.about-title {
+  font-size: 2.8rem;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.about-description {
+  color: #94a3b8;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.about-description strong {
+  color: #ffffffc8;
+}
+
+.about-highlights {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.highlight-val {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #00D2FF;
+}
+
+.highlight-label {
+  font-size: 0.8rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+    .image-border {
+      width: 200px;
+      height: 230px;
+    }
+  .about-highlights {
+    justify-content: center;
+  }
+}
+/* --- Title Styling with the Cyan Line --- */
+.about-title-main {
+  margin-left: 192px;
+  font-size: 2.8rem;
+  color: #fff;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.title-cyan-line {
+  display: inline-block;
+  margin-left: -160px;
+  width: 45px;
+  height: 2px;
+  background-color: #00D2FF;
+}
+
+/* --- View Resume Button Styling --- */
+.view-resume-btn {
+  margin-top: 25px;
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(58, 183, 214, 0.892);
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-resume-btn i {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.view-resume-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #00D2FF;
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.2);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .about-title-main {
+    justify-content: center;
+    font-size: 1.6rem;
+   margin-left: 0px;
+  }
+  .view-resume-btn {
+    margin: 25px auto 0 auto;
+  }
+}
+
+
+
+
+/* Dark Overlay that covers the whole screen */
+.resume-modal-overlay {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:transparent; /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(10px); /* Blurs the background content */
+}
+
+/* The actual center container */
+.resume-modal-content {
+  background: #111;
+  width: 85%;
+  height: 90vh;
+  max-width: 1000px;
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid #333;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Close button on top right */
+.close-btn {
+  position: absolute;
+  top: 1px;
+  right: 0px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 0 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* The PDF display */
+.resume-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* For Mobile screens */
+@media (max-width: 768px) {
+  .resume-modal-content {
+    width: 95%;
+    height: 85vh;
+  }
+}
