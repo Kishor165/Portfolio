@@ -1,7 +1,7 @@
 # 👨‍💻 Kishor Kumar — Portfolio
 
 <p align="center">
-  <img src="port.png" alt="Kishor Kumar Portfolio" width="100%">
+  <img src="portfolio-preview.png" alt="Kishor Kumar Portfolio" width="100%">
 </p>
 
 <h3 align="center">Java Full Stack Developer</h3>
