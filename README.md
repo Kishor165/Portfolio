@@ -8,7 +8,6 @@
 
 <p align="center">  
   Building responsive web applications and scalable backend systems with Java and modern web technologies.
-  
 </p>
 
 <p align="center">
