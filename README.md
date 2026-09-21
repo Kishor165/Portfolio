@@ -78,7 +78,6 @@ https://github.com/Kishor165/ONLINE-FOOD-DELIVERY-SYSTEM
 ---
 
 ### 🤖 Meeting Summarizer
-
 An AI-powered application that converts meeting audio into text and generates summarized notes. It also provides question-answer functionality based on the meeting content.
 
 **Technologies:** Python, Flask, JavaScript, OpenAI Whisper, Google Gemini, PyPDF2, python-docx
