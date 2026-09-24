@@ -143,7 +143,6 @@ My primary focus is on building **real-world applications using Java, Spring Boo
 
 
 ## 🤝 Connect With Me
-
 <p align="left">
   <a href="https://linkedin.com/in/kishorkumar28">LinkedIn</a> •
   <a href="https://github.com/Kishor165">GitHub</a> •
