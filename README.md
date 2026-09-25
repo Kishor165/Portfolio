@@ -61,7 +61,6 @@ Currently, I am strengthening my skills in **Java, Spring Boot, REST APIs, React
 ---
 
 ## 🚀 Featured Projects
-
 ### 🍔 Online Food Ordering System
 A web-based food ordering application that allows users to browse restaurants and dishes, search for food, manage profiles, and place orders.
 
