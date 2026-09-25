@@ -111,7 +111,6 @@ Database
 Problem Solving
  └── Data Structures & Algorithms
 ```
-
 ---
 
 ## 🎯 Career Focus
