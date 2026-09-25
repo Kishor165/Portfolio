@@ -14,7 +14,6 @@
   <a href="https://github.com/Kishor165">GitHub</a> •
   <a href="https://linkedin.com/in/kishorkumar28">LinkedIn</a>
 </p>
-
 ---
 
 ## 👋 About Me
