@@ -9,7 +9,6 @@
 <p align="center">  
   Building responsive web applications and scalable backend systems with Java and modern web technologies.
 </p>
-
 <p align="center">
   <a href="https://kishorkumar-app.vercel.app/">🌐 Live Portfolio</a> •
   <a href="https://github.com/Kishor165">GitHub</a> •
