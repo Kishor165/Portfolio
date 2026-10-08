@@ -21,8 +21,6 @@ I enjoy building web applications, developing backend APIs, working with databas
 Currently, I am strengthening my skills in **Java, Spring Boot, REST APIs, React, MySQL, JDBC, Servlets, and Data Structures & Algorithms**.
 ---
 
-
-
 ## 🛠️ Tech Stack
 ### Frontend
 * HTML5
