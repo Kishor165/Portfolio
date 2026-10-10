@@ -104,7 +104,6 @@ I'm currently looking for opportunities as a:
 * Software Developer
 My primary focus is on building **real-world applications using Java, Spring Boot, React, REST APIs, and MySQL**.
 ---
-
 ## 📊 GitHub
 <p align="center">
   <a href="https://github.com/Kishor165">
