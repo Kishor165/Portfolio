@@ -120,8 +120,6 @@ My primary focus is on building **real-world applications using Java, Spring Boo
 </p>
 
 ---
-
-
 <p align="center">
   ⭐ Thanks for visiting my portfolio repository!
 </p>
