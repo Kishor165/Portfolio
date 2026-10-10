@@ -83,7 +83,6 @@ Java
  ├── Servlets
  └── Spring Boot
       └── REST APIs
-
 Frontend
  ├── HTML
  ├── CSS
