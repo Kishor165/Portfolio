@@ -54,7 +54,6 @@ A web-based food ordering application that allows users to browse restaurants an
 **Repository:**
 
 https://github.com/Kishor165/ONLINE-FOOD-DELIVERY-SYSTEM
-
 ---
 
 ### 🤖 Meeting Summarizer
