@@ -12,7 +12,6 @@
   <a href="https://linkedin.com/in/kishorkumar28">LinkedIn</a>
 </p>
 ---
-
 ## 👋 About Me
 Hi, I'm **Kishor Kumar**, a B.Tech graduate in **Artificial Intelligence & Data Science** with a strong focus on **Java Full Stack Development**.
 I enjoy building web applications, developing backend APIs, working with databases, and creating clean and responsive user interfaces.
