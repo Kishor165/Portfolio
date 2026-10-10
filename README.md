@@ -17,7 +17,6 @@ Hi, I'm **Kishor Kumar**, a B.Tech graduate in **Artificial Intelligence & Data 
 I enjoy building web applications, developing backend APIs, working with databases, and creating clean and responsive user interfaces.
 Currently, I am strengthening my skills in **Java, Spring Boot, REST APIs, React, MySQL, JDBC, Servlets, and Data Structures & Algorithms**.
 ---
-
 ## 🛠️ Tech Stack
 ### Frontend
 * HTML5
