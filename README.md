@@ -118,7 +118,6 @@ My primary focus is on building **real-world applications using Java, Spring Boo
   <a href="https://github.com/Kishor165">GitHub</a> •
   <a href="https://kishorkumar-app.vercel.app/">Portfolio</a>
 </p>
-
 ---
 <p align="center">
   ⭐ Thanks for visiting my portfolio repository!
