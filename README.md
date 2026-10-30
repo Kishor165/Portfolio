@@ -49,6 +49,7 @@ Currently, I am strengthening my skills in **Java, Spring Boot, REST APIs, React
 * Exception Handling
 * Multithreading
 * Data Structures & Algorithms
+  
 ### Tools
 * Git
 * GitHub
