@@ -74,6 +74,7 @@ An AI-powered application that converts meeting audio into text and generates su
 **Technologies:** Python, Flask, JavaScript, OpenAI Whisper, Google Gemini, PyPDF2, python-docx
 
 **Repository:**
+
 https://github.com/Kishor165/Meeting-Summarizer
 
 ---
