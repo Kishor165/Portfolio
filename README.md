@@ -63,7 +63,6 @@ An AI-powered application that converts meeting audio into text and generates su
 **Repository:**
 
 https://github.com/Kishor165/Meeting-Summarizer
-
 ---
 
 ### 🛒 Amazon Clone
