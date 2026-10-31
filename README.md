@@ -31,7 +31,6 @@ Currently, I am strengthening my skills in **Java, Spring Boot, REST APIs, React
 * REST APIs
 ### Database
 * MySQL
-* 
 ### Programming & Concepts
 
 * Core Java
