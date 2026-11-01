@@ -30,6 +30,7 @@ Currently, I am strengthening my skills in **Java, Spring Boot, REST APIs, React
 * CSS3
 * JavaScript
 * React
+  
 ### Backend
 * Java
 * Spring Boot
