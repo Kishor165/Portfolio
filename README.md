@@ -84,6 +84,7 @@ A frontend e-commerce project created to practice webpage structure, responsive 
 **Technologies:** HTML, CSS, JavaScript
 
 **Repository:**
+
 https://github.com/Kishor165/Amazon_clone_page
 ---
 
