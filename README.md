@@ -100,7 +100,6 @@ Problem Solving
 ---
 
 ## 🎯 Career Focus
-
 I'm currently looking for opportunities as a:
 * Java Full Stack Developer
 * Java Developer
