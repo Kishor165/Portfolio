@@ -25,7 +25,6 @@ Currently, I am strengthening my skills in **Java, Spring Boot, REST APIs, React
 * React
   
 ### Backend
-
 * Java
 * Spring Boot
 * JDBC
