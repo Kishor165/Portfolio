@@ -38,7 +38,6 @@ Currently, I am strengthening my skills in **Java, Spring Boot, REST APIs, React
 
 * Core Java
 * OOP
-* 
 * Collections
 * 
 * Exception Handling
