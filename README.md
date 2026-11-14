@@ -118,6 +118,7 @@ I'm currently looking for opportunities as a:
 My primary focus is on building **real-world applications using Java, Spring Boot, React, REST APIs, and MySQL**.
 
 ---
+
 ## 📊 GitHub
 
 <p align="center">
