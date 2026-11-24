@@ -80,6 +80,7 @@ https://github.com/Kishor165/Meeting-Summarizer
 ---
 
 ### 🛒 Amazon Clone
+
 A frontend e-commerce project created to practice webpage structure, responsive design, styling, and JavaScript-based interactions.
 
 **Technologies:** HTML, CSS, JavaScript
